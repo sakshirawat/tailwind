@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Navbar in Tailwind CSS</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    </script>
+    <style>
+        .body{
+            margin:0;
+            padding:0
+        }
+    </style>
+    </head>
+    <body>
+        <nav class="bg-green-600">
+            <div class="flex md:flex-row justify-between items-center p-2">
+    
+                <div class="text-white text-sm mb-2 hidden md:block">
+                    Call Us Now: 555 376 7672
+                </div>
+        
+                <div class="flex  space-x-4">
+                    <a href="#" class="mx-2 text-white">Facebook</a>
+                    <a href="#" class="mx-2 text-white">Instagram</a>
+                    <a href="#" class="mx-2 text-white">Twitter</a>
+                    <a href="#" class="mx-2 text-white">LinkedIn</a>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container mx-auto bg-white">
+            <div class="flex justify-center items-center py-5 px-6">
+              
+                    <img src="images/logo.png" alt="icon">
+             
+                <button id="hamburger" class="text-yellow-500 focus:outline-none sm:hidden px-5">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="4" d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+            </div>
+    
+            <div class="flex flex-col lg:flex-row justify-center py-5 lg:space-x-14 hidden sm:flex">
+                <h6 class="text-center"><a href="index.html">Home</a></h6>
+                <h6 ><a href="aboutUs.html">About Us</a></h6>
+                <h6 class="text-center underline underline-offset:1 text-yellow-400 ">Contact Us</h6>
+            </div>
+            
+        </div>
+
+        <div class="w-full h-56 bg-green-600">
+            <div class="flex flex-col items-center justify-center h-full">
+                <div class="flex">
+                    <h1 class="text-white text-4xl font-bold">CONTACT US</h1>
+                </div>
+                <div class="flex mt-4">
+                    <h6 class="text-white text-m tracking-wider">
+                        Home / <span class="text-yellow-400 ">Contact Us</span>
+                        </h6>
+                </div>
+            </div>
+        </div>
+
+        <div class="w-full h-98">
+            <div class="flex flex-col sm:flex-row">
+                <div class="flex-col items-center justify-center  w-full p-10 bg-white  sm:w-1/2">
+                    <h1 class="font-bold text-2xl">Get in Touch</h1>
+                    <h4 class="text-green-500">ENERGICO - AGRICULTURE &  GARDEN CARE</h4>
+
+                    <h5 class="text-green-500 pt-14 pb-4">Torronto Office</h5>
+                    <h6 class="font-light">8949 Kenamar Drive, suite 101 Boston,<br>
+                        Ma 92121 phone 555 376 7872 Fax<br>
+                        555 376 7873
+                    </h6>
+
+                    <h5 class="text-green-500 pt-14 pb-4">HQ Office(Boston,MA,USA)</h5>
+                    <h6 class="font-light">8949 Kenamar Drive, suite 101 Boston,<br>
+                        Ma 92121 phone 555 376 7872 Fax<br>
+                        555 376 7873
+                    </h6>
+                </div>
+
+                <div class="flex-col items-center justify-center w-full p-10 bg-gray-100 sm:w-1/2">
+                    <h2 class="font-bold text-2xl ml-8">Write to us</h2>
+                    <h5 class="font-light mt-2 ml-8">GET A PRICING QUOTE FOR A RESIDENTIAL<br>
+                         OR BUSINESS SOLAR PANEL INSTALLATION</h5>
+
+                    <form class="p-4 pl-6 w-full">
+                        <input type="text" class="w-full border-2 border-solid border-green-400 p-2 m-4 rounded-lg"  placeholder="Your Name">
+                        <input type="email" class="w-full border-2 border-solid border-green-400 p-2 m-4 rounded-lg" placeholder="Your e-mail">
+                        <input type="phone" class="w-full border-2 border-solid border-green-400 p-2 m-4 rounded-lg" placeholder="Phone">
+                        <select id="options" class="w-full border-2 border-solid border-green-400 p-2 m-4 rounded-lg">
+                            <option value="option1">Do you need a residential or commercial system?</option>
+                        </select>
+                        <input type="text"class="w-full border-2 border-solid border-green-400 p-2 m-4 rounded-lg" placeholder="'Street Address">
+                        <select id="options" class="w-full border-2 border-solid border-green-400 p-2 m-4 rounded-lg">
+                            <option value="option1">What is your average monthly electricity bill?</option>
+                            <option value="option2">any</option>
+                        </select>
+                        <button class="w-1/2 p-2 m-4 bg-green-500 text-white rounded-lg">REQUEST QUOTE</button>
+                    </form>
+                </div>
+
+            </div>
+
+        </div>
+
+        <footer class="w-full h-auto">
+            <div class="bg-black flex flex-col items-center p-6">
+                <img src="images/footer-logo.png" alt="logo" class="h-12"> 
+        
+                <div class="flex space-x-4 py-2"> 
+                    <div class="text-white ">Facebook</div>
+                    <div class="text-white">Instagram</div>
+                    <div class="text-white">Twitter</div>
+                    <div class="text-white">LinkedIn</div>
+                </div>
+                <h6 class="text-white text-center">Energico @ 2022 Privacy Policy</h6>
+            </div>
+        </footer>
+    </body>
+</html>

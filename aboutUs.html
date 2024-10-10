@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Navbar in Tailwind CSS</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    </script>
+</head>
+<style>
+    .body{
+        margin:0;
+        padding:0
+    }
+</style>
+<body>
+
+    <nav class="bg-green-600">
+        <div class="flex flex-row justify-between items-center p-2">
+        <div class="text-white text-sm mb-2 hidden md:block ">
+            Call Us Now: 555 376 7672
+        </div>
+        <div class="flex space-x-4">
+            <a href="#" class="mx-2 text-white">Facebook</a>
+            <a href="#" class="mx-2 text-white">Instagram</a>
+            <a href="#" class="mx-2 text-white">Twitter</a>
+            <a href="#" class="mx-2 text-white">LinkedIn</a>
+        </div>
+        </div>
+
+    </nav>
+
+    <div class="container mx-auto bg-white">
+        <div class="flex justify-center items-center py-5 px-6">
+          
+                <img src="images/logo.png" alt="icon">
+         
+            <button id="hamburger" class="text-yellow-500 focus:outline-none sm:hidden px-5">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="4" d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+            </button>
+        </div>
+
+        <div class="flex flex-col lg:flex-row justify-center py-5 lg:space-x-14 hidden sm:flex">
+            <h6 class="text-center"><a href="index.html">Home</a></h6>
+            <h6 class="text-center underline underline-offset:1 text-yellow-400 ">About Us</h6>
+            <h6 class="text-center"><a href="contactUs.html">Contact Us</a></h6>
+        </div>
+        
+    </div>
+ 
+    <div class="w-full h-56 bg-green-600">
+        <div class="flex flex-col items-center justify-center h-full">
+            <div class="flex">
+                <h1 class="text-white text-4xl font-bold">ABOUT US</h1>
+            </div>
+            <div class="flex mt-4">
+                <h6 class="text-white text-m tracking-wider">
+                    Home / <span class="text-yellow-400 ">About Us</span>
+                    </h6>
+            </div>
+        </div>
+    </div>
+
+    <div class="w-full h-60 bg-white my-12">
+        <div class="flex flex-col items-center justify-center">
+            <div>
+                <h1 class="font-bold text-4xl">Why Energico?</h1>
+            </div>
+            <div class="pt-2 px-6 text-center font-medium sm:pt-2 px-4">
+                <h4 class="text-green-500 tracking-wider">WELCOME TO THE TOP RATED EXTERIOR DESIGN COMPANY</h4>
+            </div>
+            <div>
+                <h6 class="font-light pt-8 tracking-widest text-center px-4">
+                    After years of practical(both personal and work-related) experience at hand, our team of<br>
+                     passionate garderners is your only option!
+                </h6>
+            </div>
+        </div>
+    </div>
+
+    <div class="w-full h-screen">
+        <div class="relative flex flex-col h-1/2">
+            <div class="bg-cover bg-center h-full" style="background-image: url(images/img27-1410x487.jpg);">
+                <div class="absolute top-0 left-0 w-3/5 h-full bg-white bg-opacity-50 backdrop-blur-sm">
+                    <div class="flex flex-col py-12 px-8 tracking-widest h-full ">
+                        <h1 class=" flex text-green-600 font-bold text-4xl">Lawn Mowing & Lawn Care</h1>
+                        <p class="flex font-light pt-4">If your garden is all nurtured and spruced up, besides improving your mood it will also increase the property value, by much! This means, that as a team of absolute gardening experts, we'll be ready to assist with garden care activities of any sort. Starting with hedging, pruning, planting and de-thatching, we know how to help your garden keep up the shape!</p>
+                        <button class="text-white bg-green-500 w-1/6 mt-4 rounded-lg">
+                            READ MORE
+                        </button>
+                    </div>
+                       
+                </div>
+            </div>
+        </div>
+        
+        <div class="relative flex flex-col h-1/2">
+            <div class="bg-cover bg-center h-full" style="background-image: url(images/img28-1410x487.jpg);">
+                <div class="absolute top-0 right-0 w-3/5 h-full bg-white bg-opacity-60 backdrop-blur-sm">
+                    <div class="flex flex-col py-12 px-8 tracking-widest h-full">
+                        <h1 class=" flex text-green-600 font-bold text-4xl text-right ml-auto">Garden Care</h1>
+                        <p class="flex font-light pt-4 text-right ml-auto">If your garden is all nurtured and spruced up, besides improving your mood it will also increase the property value, by much! This means, that as a team of absolute gardening experts, we'll be ready to assist with garden care activities of any sort. Starting with hedging, pruning, planting and de-thatching, we know how to help your garden keep up the shape!</p>
+                        <div class="flex justify-end mt-4"> 
+                            <button class="text-white bg-green-500 w-1/6 mt-4 rounded-lg">
+                                READ MORE
+                            </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="relative flex flex-col h-1/2">
+        <div class="bg-cover bg-center h-full" style="background-image: url(images/img27-1410x487.jpg);">
+            <div class="absolute top-0 left-0 w-3/5 h-full bg-white bg-opacity-50 backdrop-blur-sm">
+                <div class="flex flex-col py-12 px-8 tracking-widest h-full">
+                    <h1 class=" flex text-green-600 font-bold text-4xl">Flowers & Plants</h1>
+                    <p class="flex font-light pt-4">If your garden is all nurtured and spruced up, besides improving your mood it will also increase the property value, by much! This means, that as a team of absolute gardening experts, we'll be ready to assist with garden care activities of any sort. Starting with hedging, pruning, planting and de-thatching, we know how to help your garden keep up the shape!</p>
+                    <button class="text-white bg-green-500 w-1/6 mt-4 rounded-lg">
+                        READ MORE
+                    </button>
+                </div>
+                   
+            </div>
+        </div>
+    </div>
+
+
+    <footer class="w-full h-auto">
+        <div class="bg-black flex flex-col items-center p-6">
+            <img src="images/footer-logo.png" alt="logo" class="h-12"> 
+    
+            <div class="flex space-x-4 py-2"> 
+                <div class="text-white ">Facebook</div>
+                <div class="text-white">Instagram</div>
+                <div class="text-white">Twitter</div>
+                <div class="text-white">LinkedIn</div>
+            </div>
+            <h6 class="text-white text-center">Energico @ 2022 Privacy Policy</h6>
+        </div>
+    </footer>
+    
+    
+    
+
+
+</body>
+</html>

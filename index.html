@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Navbar in Tailwind CSS</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    </script>
+</head>
+<style>
+    .body{
+        margin:0;
+        padding:0
+    }
+</style>
+<body>
+
+    <nav class="bg-green-600">
+        <div class="flex md:flex-row justify-between items-center p-2">
+
+            <div class="text-white text-sm mb-2 hidden md:block">
+                Call Us Now: 555 376 7672
+            </div>
+    
+            <div class="flex  space-x-4">
+                <a href="#" class="mx-2 text-white">Facebook</a>
+                <a href="#" class="mx-2 text-white">Instagram</a>
+                <a href="#" class="mx-2 text-white">Twitter</a>
+                <a href="#" class="mx-2 text-white">LinkedIn</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mx-auto bg-white">
+        <div class="flex justify-center items-center py-5 px-6">
+          
+                <img src="images/logo.png" alt="icon">
+         
+            <button id="hamburger" class="text-yellow-500 focus:outline-none sm:hidden px-5">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="4" d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+            </button>
+        </div>
+
+        <div class="flex flex-col lg:flex-row justify-center py-5 lg:space-x-14 hidden sm:flex">
+            <h6 class="text-center hover:underline hover:text-yellow-500"><a href="index.html">Home</a></h6>
+            <h6 class="text-center hover:underline hover:text-yellow-500"><a href="aboutUs.html">About Us</a></h6>
+            <h6 class="text-center hover:underline hover:text-yellow-500"><a href="contactUs.html">Contact Us</a></h6>
+        </div>
+        
+    </div>
+
+    <div class="w-full">
+        <div class="bg-cover bg-center h-1/2 flex flex-col" style="background-image: url('images/img1.jpg');">
+            <h1 class="text-white text-4xl font-bold text-center pt-14">
+                GARDEN CARE<br> 
+                is our true<br> 
+                passion!
+            </h1>
+            <h6 class="text-white font-thin text-center pt-2">
+                SO WHENEVER YOU JUST FEEL YOU NEED<br>
+                A PROFESSIONAL HELPING HAND AT<br>
+                YOUR GARDEN, CALL US UP!
+            </h6>
+            \
+            <div class="container mx-auto p-4">
+                <div class="flex justify-center items-center w-full"> 
+                    <button class="bg-transparent text-white border border-white hover:bg-blue-500 py-3 mt-4 rounded-full w-full sm:w-1/6">
+                        Find Out More
+                    </button>
+                </div>
+            </div>
+            
+            
+        </div>
+    </div>
+
+
+    <div class="w-full flex justify-center items-center mt-0 ">
+    <div class="flex flex-col md:flex-row w-full max-w-8xl ">
+        <div class="bg-yellow-600 flex flex-col items-center p-4 md:w-1/3">
+            <img src="images/img4.png" alt="pp" style="height:60px" >
+            <h6 class="text-black">BEST PRACTICING</h6>
+        </div>
+        <div class="bg-yellow-400 flex flex-col items-center p-4 md:w-1/3">
+            <img src="images/img5.png" alt="pp" style="height:60px" >
+            <h6 class="text-black">FIRST PACE</h6>
+        </div>
+        <div class="bg-yellow-200 flex flex-col items-center p-4 md:w-1/3">
+            <img src="images/img6.png" alt="pp" style="height:60px" >
+            <h6 class="text-black">RANGE OF SERVICES</h6>
+        </div>
+    </div>
+    </div>
+
+    <div class="w-full h-98 bg-white">
+        <div class="flex flex-row ">
+            <div class="flex flex-col w-1/2  items-center  justify-center hidden md:block ">
+                <img src="images/img10.jpg" alt="basket" class="mx-auto" >
+            </div>
+            <div class=" flex flex-col w-1/2 px-4 text-start text-balance pt-20">
+                <h1 class="font-bold text-3xl"> Why Energico?</h1>
+                <h6 class="pt-2 font-medium">WELCOME TO THE TOP RATES EXTERIOR DESIGN COMPANY</h6>
+                <h6 class="pt-4 font-light">After years of practical (both personal and work related) experience at hand,our team of passionate gardners is your only option!</h6>
+                <button class="bg-yellow-400 text-white rounded-l-lg rounded-r-lg  mt-4 w-full sm:w-1/6">
+                    Find Out More
+                </button>
+            </div>
+            
+
+        </div>
+    </div>
+
+    <div class="w-full h-60 mt-6">
+        <div class="bg-cover bg-center h-full" style="background-image: url('images/img11.jpg');">
+            <h1 class="font-bold text-yellow-400 text-2xl pl-14 pt-20">CREATE</h1>
+            <h1 class="font-bold text-white text-2xl pl-14">The Perfect Garden!</h1>
+            <button class="text-white text-xs ml-14 font-light bg-green-500 w-32 py-1  rounded-full ">
+                Find Out More
+            </button>
+        </div>
+    </div>
+
+    <div class="w-full mt-4">
+        <div class="bg-cover bg-center" style="background-image: url('images/img12.jpg'); height:400px">
+            <h1 class="font-bold text-2xl pl-4 pt-12 tracking-widest sm:pl-14 sm:text-5xl">
+                Perform to the<br>
+                 Highest Standards</h1>
+            <h6 class="font-light  pl-4 text-xs pt-6 pl-14 tracking-wider sm:pl-14 sm:text-lg">
+                With all kinds of garden design/care,<br>
+                 lawn & plants in our range, we're your <br>
+                 natural choice!</h6>
+            <button class="font-light text-black py-1 px-2 ml-5 mt-4 text-xs w-25  border-2 border-black-800 rounded-full sm:w-40 sm:ml-14" >
+                Get A Quote
+            </button>
+    </div>
+    </div>
+
+    <div class="bg-gray-200 h-auto w-full mt-4">
+        <h1 class="font-bold text-4xl py-10 text-center ">Our Advantages</h1>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 p-8">
+            <div class="flex flex-col items-center justify-center text-center space-x-8">
+                <div class="w-25 h-30 py-2">
+                    <img src="images/img13.png" alt="bulb" class="w-full h-full object-cover">
+                </div>
+                <h1 class="py-2 ">CREATIVE IDEAS</h1>
+                <h6 class="py-2 font-light tracking-widest">Serving everyone from household owners to hotels and office, we make sure to provide a truly full-cycle range of exterior design, landscaping, and exterior remodelling services!</h6>
+            </div>
+            <div class="flex flex-col items-center justify-center text-center space-x-8">
+                <div class="w-20 h-30 py-2">
+                    <img src="images/img13.png" alt="bulb" class="w-full h-full object-cover">
+                </div>
+                <h1 class="py-2">CREATIVE IDEAS</h1>
+                <h6 class="py-2 font-light tracking-widest">Serving everyone from household owners to hotels and office, we make sure to provide a truly full-cycle range of exterior design, landscaping, and exterior remodelling services!</h6>
+            </div>
+            <div class="flex flex-col items-center justify-center text-center space-x-8">
+                <div class="w-20 h-30 py-2">
+                    <img src="images/img13.png" alt="bulb" class="w-full h-full object-cover">
+                </div>
+                <h1 class="py-2">CREATIVE IDEAS</h1>
+                <h6 class="py-2 font-light tracking-widest">Serving everyone from household owners to hotels and office, we make sure to provide a truly full-cycle range of exterior design, landscaping, and exterior remodelling services!</h6>
+            </div>
+            <div class="flex flex-col items-center justify-center text-center space-x-8">
+                <div class="w-20 h-30 py-2">
+                    <img src="images/img13.png" alt="bulb" class="w-full h-full object-cover">
+                </div>
+                <h1 class="py-2">CREATIVE IDEAS</h1>
+                <h6 class="py-2 font-light tracking-widest">Serving everyone from household owners to hotels and office, we make sure to provide a truly full-cycle range of exterior design, landscaping, and exterior remodelling services!</h6>
+            </div>
+            <div class="flex flex-col items-center justify-center text-center space-x-8">
+                <div class="w-20 h-30 py-2">
+                    <img src="images/img13.png" alt="bulb" class="w-full h-full object-cover">
+                </div>
+                <h1 class="py-2">CREATIVE IDEAS</h1>
+                <h6 class="py-2 font-light tracking-widest">Serving everyone from household owners to hotels and office, we make sure to provide a truly full-cycle range of exterior design, landscaping, and exterior remodelling services!</h6>
+            </div>
+            <div class="flex flex-col items-center justify-center text-center space-x-8">
+                <div class="w-20 h-30 py-2">
+                    <img src="images/img13.png" alt="bulb" class="w-full h-full object-cover">
+                </div>
+                <h1 class="py-2">CREATIVE IDEAS</h1>
+                <h6 class="py-2 font-light tracking-widest">Serving everyone from household owners to hotels and office, we make sure to provide a truly full-cycle range of exterior design, landscaping, and exterior remodelling services!</h6>
+            </div>
+            
+            </div>
+        
+    </div>
+
+    <div class="w-full h-auto my-8">
+        <h1 class="font-bold text-m text-center sm:text-4xl ">See the Tips & Tricks for Gardners on Our Blog!</h1>
+        <div class="flex flex-col md:flex-row p-8 space-y-8 md:space-y-0 md:space-x-8">
+            <div class="flex flex-col w-full md:w-1/2 md:space-x-4 pr-4">
+                <img src="images/img21.jpg" alt="kk" class="w-full h-64 object-cover">
+                <h1 class="text-start text-xl tracking-widest py-4">THE LESS CHEMICALS YOU USE,THE BETTER!</h1>
+                <h6 class="text-start text-m tracking-wide">So, we guess that if you're reading this blog entry now, you are an avid gardner yourself, right? Which in turn means that as we're talking about the ways to compost your garden, the more you should be listening.</h6>
+            </div>
+            <div class="flex flex-col w-full md:w-1/2 md:space-x-4 pl-4 ">
+                <img src="images/img20.jpg" alt="kk" class="w-full h-64 object-cover">
+                <h1 class="text-start text-xl tracking-widest py-4">THE LESS CHEMICALS YOU USE,THE BETTER!</h1>
+                <h6 class="text-start text-m tracking-wide">So, we guess that if you're reading this blog entry now, you are an avid gardner yourself, right? Which in turn means that as we're talking about the ways to compost your garden, the more you should be listening.</h6>
+            </div>
+        </div>
+    </div>
+
+    <footer class="w-full h-auto">
+        <div class="bg-black flex flex-col items-center p-6">
+            <img src="images/footer-logo.png" alt="logo" class="h-12"> 
+    
+            <div class="flex space-x-4 py-2"> 
+                <div class="text-white ">Facebook</div>
+                <div class="text-white">Instagram</div>
+                <div class="text-white">Twitter</div>
+                <div class="text-white">LinkedIn</div>
+            </div>
+            <h6 class="text-white text-center">Energico @ 2022 Privacy Policy</h6>
+        </div>
+    </footer>
+    
+
+    
+</body>
+
+</html>
